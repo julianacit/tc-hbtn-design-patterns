@@ -22,6 +22,7 @@ public class Pedido {
         for (ItemPedido item: itensDentroCaixa) {
             retorno += "\n\t\t- " + item.getTipo() + " " + item.getNome();
         }
+        retorno += "\n";
         return retorno;
     }
 }
