@@ -19,8 +19,8 @@ public abstract class Personagem {
 
     public abstract double getDanoAtaque();
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return String.format("Personagem { nome = %s, tipo = %s, inteligencia = %d, forca = %d, vigor = %d, " +
                 "resistencia = %d, destreza = %d, dano ataque = %.2f }", this.nome, this.tipo, this.inteligencia,
                 this.forca, this.vigor, this.resistencia, this.destreza, this.getDanoAtaque());
