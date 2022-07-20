@@ -14,11 +14,11 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String retorno = "\tFora da caixa:";
+        String retorno = "\tFora da Caixa:";
         for (ItemPedido item: itensForaCaixa) {
             retorno += "\n\t\t- " + item.getTipo() + " " + item.getNome();
         }
-        retorno += "\n\tDentro da caixa:";
+        retorno += "\n\tDentro da Caixa:";
         for (ItemPedido item: itensDentroCaixa) {
             retorno += "\n\t\t- " + item.getTipo() + " " + item.getNome();
         }
