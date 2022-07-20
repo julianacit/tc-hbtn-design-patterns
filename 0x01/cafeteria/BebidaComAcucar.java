@@ -6,12 +6,12 @@ public class BebidaComAcucar extends BebidaDecorator{
     }
 
     public List<String> obterIngredientes() {
-        List<String> lista = bebidaDecorada.obterIngredientes();
+        List<String> lista = this.getBebidaDecorada().obterIngredientes();
         lista.add("acucar");
         return lista;
     }
 
     public double obterPreco() {
-        return bebidaDecorada.obterPreco() + 1.9;
+        return this.getBebidaDecorada().obterPreco() + 1.9;
     }
 }

@@ -6,11 +6,11 @@ public class BebidaComLeite extends BebidaDecorator{
     }
 
     public List<String> obterIngredientes() {
-        List<String> lista = bebidaDecorada.obterIngredientes();
-        lista.add("cafe");
+        List<String> lista = this.getBebidaDecorada().obterIngredientes();
+        lista.add("leite");
         return lista;
     }
     public double obterPreco() {
-        return bebidaDecorada.obterPreco() + 3.2;
+        return this.getBebidaDecorada().obterPreco() + 3.2;
     }
 }
