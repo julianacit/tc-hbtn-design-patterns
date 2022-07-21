@@ -48,7 +48,7 @@ public class Impressao {
         int paginasPretoBranco = paginasTotais - paginasColoridas;
         String retorno = String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, %s. total: R$ %.2f",
                 paginasTotais, paginasColoridas, paginasPretoBranco,
-                (ehFrenteVerso ? "frente e verso" : "frente"),
+                (ehFrenteVerso ? "frente e verso" : "frente apenas"),
                 calcularTotal()
         );
 
