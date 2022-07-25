@@ -1,0 +1,12 @@
+Resumo Arquitetura Hexagonal
+
+	A arquitetura hexagonal foi proposta por Alistair Cockburn nos anos 90, com o objetivo de auxiliar em questões como
+reusabilidade do código, idenpedência entre plataformas e tecnologias, além de diminuir o acoplamento.
+	Como todas as camadas têm como fim a divisão de preocupações e, portanto, divisão de camadas, essa se torna 
+a principal diferença entre arquiteturas: como essa divisão ocorre. Sendo assim, enquanto a famosa arquitetura limpa se divide
+em 4 partes (entidades, casos de uso, controladores e interfaces externas), a arquitetura hexagonal divide em 2 (classes de
+domínio e classes relacionadas com interfaces externas). Sendo assim, são usados adaptadores como intermediadores entre as classes
+de domínio e as externas.
+	Como cada arquitetura possui suas características, é de se esperar que possam ser melhor utilizadas em casos diferentes,
+a arquitetura hexagonal é bem-vinda quando a aplicação necessita de diferentes pontos de acesso (de tecnologias diferentes),
+podendo esses ser representados por diferentes adaptadores. 
